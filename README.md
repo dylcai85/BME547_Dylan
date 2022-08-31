@@ -1,1 +1,4 @@
-# BME547_Dylan
+# Patient Health Database
+
+Author: Dylan Cai
+
