@@ -19,5 +19,12 @@ def HDL():
     num = input("Enter the HDL value: ")
     return int(num)
     
+def check_HDL(hdl_val):
+    if hdl_val >= 60:
+        return "Normal"
+    elif hdl_val >= 40 and hdl_val < 60:
+        return "Borderline Low"
+    else:
+        return "Low"
 interface()
 HDL()
