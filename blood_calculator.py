@@ -15,5 +15,9 @@ def interface():
         choice = input("Enter choice: ")
         if choice == "9":
             return
+def HDL():
+    num = input("Enter the HDL value: ")
+    return int(num)
     
 interface()
+HDL()
