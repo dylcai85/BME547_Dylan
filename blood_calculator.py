@@ -15,7 +15,7 @@ def interface():
         choice = input("Enter choice: ")
         if choice == "9":
             return
-def HDL():
+def input_HDL():
     num = input("Enter the HDL value: ")
     return int(num)
     
@@ -26,5 +26,12 @@ def check_HDL(hdl_val):
         return "Borderline Low"
     else:
         return "Low"
+    
+def HDL_driver():
+    hdl_val = input_HDL()
+    answer = check_HDL(hdl_val)
+    output_HDL_result(hdl_val, answer)
+
+def output_HDL_result(hdl_value, charac):
+    print("The results for an HDL value of {} is {}".format(hdl_value, charac))
 interface()
-HDL()
