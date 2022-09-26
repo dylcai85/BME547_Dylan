@@ -25,11 +25,11 @@ def main():
     return db
     
 def db_print(db):
-    for x in db:
-        print("Name: {}, ID: {}, Age: {}, Tests: {}".format(get_full_name(db[x]),
-                                                            db[x]["pid"],
-                                                            db[x]["age"],
-                                                            db[x]['tests']))
+    for patient_key in db:
+        print("Name: {}, ID: {}, Age: {}, Tests: {}".format(get_full_name(db[patient_key]),
+                                                            db[patient_key]["pid"],
+                                                            db[patient_key]["age"],
+                                                            db[patient_key]['tests']))
 
 
 def adult_or_minor(patient):
